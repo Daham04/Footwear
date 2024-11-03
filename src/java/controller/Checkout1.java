@@ -230,10 +230,10 @@ public class Checkout1 extends HttpServlet {
             transaction.commit();
 
             //set payment data (start)
-            String merchant_id = "1221047";
+            String merchant_id = "";
             String formatted_amount = new DecimalFormat("0.00").format(amount);
             String currency = "LKR";
-            String merchantSecret = "Mjk1MDA1NzgxMTE2OTY5NTA5NzkyMDgwMDkyMTg5MTkyODE3NjI1OQ=="; //**
+            String merchantSecret = ""; //**
             String merchantSecretMdHash = Payhere1.generateMD5(merchantSecret);
 
             JsonObject payhere = new JsonObject();
